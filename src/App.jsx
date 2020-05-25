@@ -27,7 +27,10 @@ import {
 } from './styles';
 import { Toggle } from './components';
 import './main.css';
+import palette from './styles/palette';
 import data from './data.json';
+
+const { black08 } = palette;
 
 const {
   header,
@@ -56,7 +59,7 @@ const CV = () => {
   return (
     <Container>
       <DarkModeContainer onClick={handleMode} role="button">
-        <Label margin="0 10px 0 0" className={`${className} widget`}>{className === 'dark-mode' ? 'Light mode' : 'Dark mode'}</Label>
+        <Label margin="0 10px 0 0" className={`${className} widget`}>{className === 'dark-mode' ? 'Dark mode' : 'Light mode'}</Label>
         <Toggle status={className === 'dark-mode'} />
       </DarkModeContainer>
       <HeaderContainer>
@@ -74,26 +77,30 @@ const CV = () => {
       <Line className={className} />
 
       <SectionContainer>
-        <SideSection>
-          <Label className={className}>{contact.label}</Label>
-          {contact.items.map(item => (
-            <Description className={className} key={item} fontSize="14px" lineHeight="1.45">
-              {item}
-            </Description>
-          ))}
-          <LinkContainer>
-            {socialMedia.map(item => (
-              <Link key={item.src} href={item.src} target="_blank">{item.label}</Link>
-            ))}
-          </LinkContainer>
-          <Label className={className} marginTop="25px">{areas.label}</Label>
-          <ul>
-            {areas.items.map(item => (
-              <ListItem className={className} key={item} fontSize="14px" lineHeight="1.45">
+        <SideSection className={className}>
+          <div>
+            <Label className={className} color={black08}>{contact.label}</Label>
+            {contact.items.map(item => (
+              <Description className={className} key={item} fontSize="14px" lineHeight="1.45">
                 {item}
-              </ListItem>
+              </Description>
             ))}
-          </ul>
+            <LinkContainer>
+              {socialMedia.map(item => (
+                <Link key={item.src} href={item.src} target="_blank">{item.label}</Link>
+              ))}
+            </LinkContainer>
+          </div>
+          <div>
+            <Label className={className} marginTop="25px">{areas.label}</Label>
+            <ul>
+              {areas.items.map(item => (
+                <ListItem className={className} key={item} fontSize="14px" lineHeight="1.45">
+                  {item}
+                </ListItem>
+              ))}
+            </ul>
+          </div>
         </SideSection>
         <MainSection>
           <Label className={className}>{jobExperience.label}</Label>
@@ -121,13 +128,16 @@ const CV = () => {
       <Line className={className} />
 
       <SectionContainer>
-        <SideSection>
-          <Label className={className}>{languages.label}</Label>
-          {languages.items.map(item => (
-            <Description className={className} key={item} fontSize="14px" lineHeight="1.45">
-              {parse(item)}
-            </Description>
-          ))}
+        <SideSection className={className}>
+          <div>
+            <Label className={className}>{languages.label}</Label>
+            {languages.items.map(item => (
+              <Description className={className} key={item} fontSize="14px" lineHeight="1.45">
+                {parse(item)}
+              </Description>
+            ))}
+          </div>
+          <div style={{ width: '50%', marginTop: '0' }} />
         </SideSection>
         <MainSection>
           <Label className={className}>{rewards.label}</Label>
@@ -142,19 +152,23 @@ const CV = () => {
       <Line className={className} />
 
       <SectionContainer>
-        <SideSection>
-          <Label className={className}>{hardSkills.label}</Label>
-          <ul>
-            {hardSkills.items.map(item => (
-              <ListItem className={className} key={item} fontSize="14px" lineHeight="1.45">{item}</ListItem>
-            ))}
-          </ul>
-          <Label className={className} marginTop="25px">{softSkills.label}</Label>
-          <ul>
-            {softSkills.items.map(item => (
-              <ListItem className={className} key={item} fontSize="14px" lineHeight="1.45">{item}</ListItem>
-            ))}
-          </ul>
+        <SideSection className={className}>
+          <div>
+            <Label className={className}>{hardSkills.label}</Label>
+            <ul>
+              {hardSkills.items.map(item => (
+                <ListItem className={className} key={item} fontSize="14px" lineHeight="1.45">{item}</ListItem>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <Label className={className} marginTop="25px">{softSkills.label}</Label>
+            <ul>
+              {softSkills.items.map(item => (
+                <ListItem className={className} key={item} fontSize="14px" lineHeight="1.45">{item}</ListItem>
+              ))}
+            </ul>
+          </div>
         </SideSection>
         <MainSection>
           <Label className={className} fontWeight="900">{education.label}</Label>
@@ -174,7 +188,7 @@ const CV = () => {
       <Line className={className} />
 
       <SectionContainer>
-        <SideSection />
+        <SideSection backgroundColor='transparent' />
         <MainSection>
           <Label className={className}>{jobReferences.label}</Label>
           {jobReferences.items.map(item => (

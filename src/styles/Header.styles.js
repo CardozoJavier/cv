@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import palette from './palette';
 const { red46, black08, dark, light, beiged4 } = palette;
 
@@ -7,6 +7,10 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -21,7 +25,11 @@ export const Image = styled.img`
   margin: -30px 0 0 0;
 `;
 
-export const TitleContainer = styled.div``;
+export const TitleContainer = styled.div`
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+`;
 
 export const Title = styled.h1`
   text-transform: uppercase;
@@ -30,10 +38,13 @@ export const Title = styled.h1`
   background-color: transparent;
   transition: color .5s, background-color .5s;
   &.dark-mode {
-    color: ${dark.primary};
+    color: ${dark.secondary};
   }
   &.light-mode {
     color: ${red46};
+  }
+  @media (max-width: 768px) {
+    text-align: center;
   }
 `;
 
@@ -44,10 +55,13 @@ export const SubTitle = styled.h2`
   background-color: transparent;
   transition: color .5s, background-color .5s;
   &.dark-mode {
-    color: ${dark.secondary};
+    color: ${dark.primary};
   }
   &.light-mode {
     color: ${light.primary};
+  }
+  @media (max-width: 768px) {
+    text-align: center;
   }
 `;
 

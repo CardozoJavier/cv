@@ -16,12 +16,9 @@ export const Container = styled.div`
     }
     background-color: transparent;
     transition: color .5s, background-color .5s;
-    &.dark-mode {
-      color: ${dark.font};
-    }
-    &.light-mode {
-      color: ${light.font};
-    }
+  }
+  @media (max-width: 768px) {
+    padding: 5%;
   }
 `;
 
@@ -42,6 +39,12 @@ export const Label = styled.p`
   &.light-mode {
     color: ${red46};
   }
+  @media (max-width: 768px) {
+    margin-top: 0;
+    &.light-mode {
+      color: ${({ color }) => color || red46};
+    }
+  }
 `;
 
 export const Line = styled.div`
@@ -55,7 +58,7 @@ export const Line = styled.div`
     background-color: ${dark.tertiary};
   }
   &.light-mode {
-    background-color: ${light.font};
+    background-color: ${light.primary};
   }
 `;
 
@@ -64,6 +67,9 @@ export const LinkContainer = styled.div`
   justify-content: space-around;
   margin-top: 5px;
   width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Link = styled.a`
