@@ -1,0 +1,155 @@
+{
+  "header": {
+    "title": "Javier Andrés Cardozo",
+    "subtitle": "Front-end developer",
+    "label": "Perfil",
+    "description": "Soy front-end web developer con experiencia en desarrollo de Single Page Applications implementadas en react.js, redux, styled-components, flexbox y css-grid, entre otras. <br> Además manejo node.js y postgreSQL para el back-end. <br> <strong>Actualmente trabajo desarrollando server side rendering con react y node.</strong>"
+  },
+  "contact": {
+    "label": "Contacto",
+    "items": [
+      "Javier Andrés Cardozo",
+      "CABA, Argentina",
+      "1131137722",
+      "cardozojavier.c@gmail.com"
+    ]
+  },
+  "socialMedia": [
+    {
+      "label": "Linkedin",
+      "src": "https://www.linkedin.com/in/javier-andres-cardozo/"
+    },
+    {
+      "label": "Github",
+      "src": "https://www.github.com/CardozoJavier"
+    }
+  ],
+  "education": {
+    "label": "Educación",
+    "items": [
+      {
+        "title": "Coding bootcamp",
+        "subtitle": "<strong>Plataforma 5</strong> septiembre 2018 - diciembre 2018",
+        "description": "600 horas de formación intensiva en desarrollo web sobre el stack tecnológico de javascript."
+      },
+      {
+        "title": "Técnico superior en automatización, control y robótica",
+        "subtitle": "<strong>ITUOM</strong> febrero 2013 - diciembre 2017",
+        "description": "Promedio: 7.77 <br> Abanderado nacional 2016. <br> Proyecto final implementado sobre la <br> plataforma de desarrollo Arduino."
+      }
+    ]
+  },
+  "areas": {
+    "label": "Áreas de experiencia",
+    "items": [
+      "Desarrollo web full stack",
+      "Desarrollo de software Arduino",
+      "Programación de PLC",
+      "Programación de HMI",
+      "Programación de robot industrial"
+    ]
+  },
+  "languages": {
+    "label": "Idiomas",
+    "items": [
+      "Inglés B1 Intermediate <br> Oral: básico <br> Escritura: intermedio <br> Lectura: avanzado"
+    ]
+  },
+  "rewards": {
+    "label": "Cursos y certificaciones",
+    "items": [
+      "2018 — Introducción a HTML, CSS y JavaScript — <strong>Plataforma 5</strong>",
+      "2018 — Java Standard Programming J2SE 8.0 — <strong>EducaciónIT</strong>",
+      "2017 — Introducción a Bases de Datos y MySQL — <strong>EducaciónIT</strong>",
+      "2017 — Gestión y admin. de proyectos de automatización — <strong>UTN</strong>",
+      "2017 — Operación y programación de robot industrial — <strong>UTN</strong>",
+      "2017 — Configuración de redes con PLC — <strong>UTN</strong>",
+      "2016 — Programación avanzada de PLC — <strong>UTN</strong>",
+      "2016 — Programación básica de PLC — <strong>UTN</strong>",
+      "2016 — Intro. a los controladores lógicos programables — <strong>UTN</strong>",
+      "2016 — Programación Arduino — <strong>EducaciónIT</strong>"
+    ]
+  },
+  "hardSkills": {
+    "label": "Hard skills",
+    "items": [
+      "Javascript ES5 / ES6",
+      "React.js",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Webpack",
+      "Babel",
+      "Mocha - Chai",
+      "Metodologías ágiles SCRUM"
+    ]
+  },
+  "softSkills": {
+    "label": "Soft skills",
+    "items": [
+      "Capacidad resolutiva",
+      "Orientado a resultados",
+      "Responsabilidad",
+      "Formación continua",
+      "Autonomía"
+    ]
+  },
+  "jobExperience": {
+    "label": "Experiencia laboral",
+    "items": [
+      {
+        "title": "Front-end web developer",
+        "subtitle": "Mercado Libre | Febrero 2019 - Presente",
+        "description": "Dentro de MercadoPago desarrollé features en el equipo de Asset Management el cuál permite la inversión de dinero dentro de la plataforma. <br> Por otra parte, actualmente estoy en el quipo de Know Your Customer, en donde nos dedicamos a validar la identidad de los usuarios."
+      },
+      {
+        "title": "Full stack developer",
+        "subtitle": "Freelance | Diciembre 2018 - Febrero 2019",
+        "description": "Desarrollo de aplicaciones webs para clientes y principalmente para portfolio personal",
+        "bullets": {
+          "title": "Proyectos:",
+          "items": [
+            "<a href='https://github.com/CardozoJavier/proximaCopa.git' target='_blank'>Próxima copa</a> | Tienda online para la venta de vinos y bebidas.",
+            "<a href='https://github.com/CardozoJavier/juke' target='_blank'>Juke</a> | Plataforma de streaming de música."
+          ]
+        }
+      },
+      {
+        "title": "Operario de producción",
+        "subtitle": "PSA Peugeot-Citroën Argentina | Diciembre 2015 - Febrero 2019",
+        "description": "Encargado de la producción de autopartes para el ensamblaje de automóviles, bajo estándares y herramientas internacionales (5S, TPM, Kaizen, Standard Work, Management Visual)."
+      },
+      {
+        "title": "Operario de producción",
+        "subtitle": "Magnetto Automotive | Septiembre 2009 – Diciembre 2015",
+        "description": "Operación de brazo robótico para la producción de autopartes.",
+        "bullets": {
+          "title": "Destrezas desarrolladas",
+          "items": [
+            "Trabajo en equipo",
+            "Disciplina",
+            "Auto-motivación"
+          ]
+        }
+      }
+    ]
+  },
+  "jobReferences": {
+    "label": "Referencias laborales",
+    "items": [
+      {
+        "name": "Juan Agustín Rossi",
+        "company": "Mercado Libre",
+        "title": "Project manager",
+        "description": "<a href='https://www.linkedin.com/in/juanchorossi/' target='_blank'>Linkedin</a> | jarossi@mercadolibre.com"
+      },
+      {
+        "name": "Fernando Herrera",
+        "company": "Mercado Libre",
+        "title": "Project leader",
+        "description": "<a href='https://www.linkedin.com/in/fgherrera01/' target='_blank'>Linkedin</a> | fernando.herrera@mercadolibre.com"
+      }
+    ]
+  }
+}
