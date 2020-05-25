@@ -25,15 +25,16 @@ module.exports = {
 				use : [ MiniCssExtractPlugin.loader, 'css-loader' ]
       },
       {
-        test: /\.(png|svg|jpg|gif|jpeg)$/,
-        use: ['file-loader'],
+        test: /\.(png|svg|jpg|gif|jpeg|ico)$/,
+        use: ['file-loader?name=[name].[ext]'],
       },
 		]
 	},
 	plugins : [
 		new HtmlWebpackPlugin ({
 			template : './src/index.html',
-			filename : './index.html'
+      filename : 'index.html',
+      favicon: './src/assets/cv.png'
 		}),
 		new MiniCssExtractPlugin({
 			filename : '[name].css',
