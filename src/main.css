@@ -7,3 +7,12 @@
   box-sizing : border-box;
   font-family: 'Raleway', sans-serif;
 }
+
+.dark-mode {
+  background-color: #171725;
+  transition: all .5s;
+}
+.light-mode {
+  background-color: #fff;
+  transition: all .5s;
+}

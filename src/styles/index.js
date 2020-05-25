@@ -7,6 +7,7 @@ export {
   ListItem,
   BulletContainer,
   BulletTitle,
+  DarkModeContainer,
 } from './App.styles';
 
 export {
@@ -25,4 +26,5 @@ export {
   MainSection,
   SectionTitle,
   SectionSubTitle,
+  SectionDescription
 } from './Section.styles';

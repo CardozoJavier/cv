@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import palette from './palette';
-const { red46, black08 } = palette;
+const { red46, black08, dark, light, beiged4 } = palette;
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -27,16 +27,40 @@ export const Title = styled.h1`
   text-transform: uppercase;
   font-size: 44px;
   margin-bottom: 10px;
+  background-color: transparent;
+  transition: color .5s, background-color .5s;
+  &.dark-mode {
+    color: ${dark.primary};
+  }
+  &.light-mode {
+    color: ${red46};
+  }
 `;
 
 export const SubTitle = styled.h2`
   text-transform: uppercase;
   color: ${red46};
   font-size: 22px;
+  background-color: transparent;
+  transition: color .5s, background-color .5s;
+  &.dark-mode {
+    color: ${dark.secondary};
+  }
+  &.light-mode {
+    color: ${light.primary};
+  }
 `;
 
 export const Description = styled.p`
   line-height: ${({ lineHeight }) => lineHeight || '1.25'};
   width: ${({ width }) => width};
   font-size: ${({ fontSize }) => fontSize};
+  background-color: transparent;
+  transition: color .5s, background-color .5s;
+  &.dark-mode {
+    color: ${dark.tertiary};
+  }
+  &.light-mode {
+    color: ${light.font};
+  }
 `;
